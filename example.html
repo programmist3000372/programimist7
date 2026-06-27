@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>сайт programmist7</title>
+    <link rel="icon" href="icon.png" type="image/png">
+    <style>
+      :root {
+        --bg-color: #f4f6f9;
+        --card-bg: #ffffff;
+        --accent: #3b82f6;
+        --text-main: #2d3748;
+        --text-secondary: #718096;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        background-color: var(--bg-color);
+        color: var(--text-main);
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+      }
+
+      header {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      h1 {
+        font-size: 2.2rem;
+        color: var(--text-main);
+        margin-bottom: 8px;
+      }
+
+      p.subtitle {
+        color: var(--text-secondary);
+        font-size: 1rem;
+      }
+
+      .card-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 30px;
+        width: 100%;
+        max-width: 900px;
+      }
+
+      .app-card {
+        background: var(--card-bg);
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+        text-decoration: none;
+        color: inherit;
+        display: block;
+      }
+
+      .app-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+      }
+
+      .cover-wrapper {
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+        position: relative;
+      }
+
+      .cover-wrapper img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+
+      .card-content {
+        padding: 18px;
+      }
+
+      .card-title {
+        font-weight: 700;
+        font-size: 1.1rem;
+        margin-bottom: 6px;
+        line-height: 1.3;
+      }
+
+      .card-desc {
+        color: var(--text-secondary);
+        font-size: 0.9rem;
+        line-height: 1.4;
+      }
+
+      @media (max-width: 600px) {
+        h1 { font-size: 1.8rem; }
+        .card-grid { grid-template-columns: 1fr; }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>programmist7</h1>
+      <p class="subtitle">Мои проекты и игры</p>
+    </header>
+
+    <div class="card-grid">
+      <!-- Карточка 1 -->
+      <a href="2html.html" class="app-card">
+        <div class="cover-wrapper">
+          <img src="cover.png" alt="Обложка игры" loading="lazy">
+        </div>
+        <div class="card-content">
+          <div class="card-title">htmcreate</div>
+          <div class="card-desc">мощная утилита для создания сайтов</div>
+        </div>
+      </a>
+
+      <div class="card-grid">
+      <!-- Карточка 1 -->
+      <a href="3html.html" class="app-card">
+        <div class="cover-wrapper">
+          <img src="cover2.png" alt="Обложка игры" loading="lazy">
+        </div>
+        <div class="card-content">
+          <div class="card-title">interpritatorv1.0v</div>
+          <div class="card-desc">мощный редактор python без установки python</div>
+        </div>
+      </a>
+        <div class="card-grid">
+      <!-- Карточка 1 -->
+      <a href="4html.html" class="app-card">
+        <div class="cover-wrapper">
+          <img src="cover3.png" alt="Обложка игры" loading="lazy">
+        </div>
+        <div class="card-content">
+          <div class="card-title">планы</div>
+          <div class="card-desc">приложение типа заметки</div>
+        </div>
+      </a>
+    </div>
+  </body>
+</html>
